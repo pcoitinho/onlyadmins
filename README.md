@@ -17,7 +17,7 @@ MU Plugins are activated automatically and do not show up in the plugins page, s
 
 To install Only Admins as a MU Plugin, copy only the `onlyadmins.php` (not in its parent folder) file directly to your `wp-content/mu-plugins` folder. You might have to create the mu-plugins folder.
 
-## Liscence
+## License
 
 Only Admins is liscenced under the General Public Liscence version 2 (GPLv2) liscence.
 

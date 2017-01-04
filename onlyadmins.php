@@ -10,6 +10,7 @@
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+defined( 'ABSPATH' ) or die( 'No no no no' );
 
 function onlyadmins_router() {
 
@@ -19,7 +20,7 @@ function onlyadmins_router() {
     auth_redirect();
   }
 
-  // check user is logged in, but not admin admin
+  // check user is logged in, but not admin
   if ( is_user_logged_in() && ! current_user_can( 'administrator' ) ) {
     // show error message
     wp_die( __( 'You must be an administrator to accesss this page', 'onlyadmins' ) );
