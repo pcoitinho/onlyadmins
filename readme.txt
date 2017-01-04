@@ -54,16 +54,11 @@ Simply change `current_user_can( 'administrator' )` to whichever role or capabil
 == Changelog ==
 
 = 1.1 =
+* Log out link when no access
 * Require ABSPATH
 * Typo fix
 
 == Upgrade Notice ==
 
 = 1.1 =
-Enhanced security
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
+Now you can log out when you don't have permission to access the page... which means you won't be stuck on an infinite loop!
