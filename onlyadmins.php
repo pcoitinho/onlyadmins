@@ -23,8 +23,7 @@ function onlyadmins_router() {
   // check user is logged in, but not admin
   if ( $GLOBALS['pagenow'] != 'wp-login.php' && is_user_logged_in() && ! current_user_can( 'administrator' ) ) {
     // show error message
-    wp_die( sprintf( __( 'You must be an administrator to accesss this page. <a href="%s">Logout?</a>', 'onlyadmins' ), wp_logout_url() ) );
-
+    wp_die( sprintf( __( 'You don\'t have permission to accesss this page. <a href="%s">Logout?</a>', 'onlyadmins' ), wp_logout_url() ) );
   }
 
 }
